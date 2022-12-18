@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;700&family=Work+Sans:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #ecf2f8;
+  display: flex;
+  justify-content: center;
+}
+
+.main-section {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  width: 85%;
+  max-width: 1400px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 25px;
+}
+
+@media (max-width: 1100px) {
+  .main-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.item {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  border-radius: 10px;
+}
+
+.item1 {
+  background-color: #6541c8;
+  color: white;
+  grid-column: 1 / span 4;
+}
+
+.quotation-bg {
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top 0px right 80px;
+}
+
+.item2 {
+  background-color: #48556a;
+  color: white;
+  grid-column: 5;
+}
+.item3 {
+  background-color: white;
+  color: white;
+  grid-column: 1;
+}
+.item4 {
+  background-color: #19212e;
+  color: white;
+  grid-column: 2 / spam 5;
+  grid-row: 2;
+}
+.item5 {
+  background-color: white;
+  grid-column: 6;
+  grid-row: 1 / span 2;
+}
+
+.profile-box {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.profile-photo {
+  width: 40px;
+  border-radius: 50%;
+  border: 1px white solid;
+  margin-right: 20px;
+}
+
+.profile-name {
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 5px;
+}
+
+.profile-grade {
+  font-family: "League Spartan", sans-serif;
+  opacity: 0.5;
+}
+
+.text-box {
+  padding: 20px;
+}
+
+.subtitle-text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.main-text {
+  font-family: "League Spartan", sans-serif;
+  opacity: 0.5;
+  font-size: 18px;
+}
+
+.text-black {
+  color: black;
+}
